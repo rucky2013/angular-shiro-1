@@ -28,7 +28,7 @@ module.exports = function(grunt) {
 		},
 		src : [ 'src/services/config.js', 'src/services/authenticate.js', 'src/services/authorize.js',
 			'src/services/session.js', 'src/services/filters.js', 'src/services/subject.js',
-			'<%= build %>/<%= pkg.name %>.templates.js', 'src/directives/*.js', 'src/angular-shiro.js' ],
+			'<%= build %>/<%= pkg.name %>.templates.js', 'src/directives/*.js', 'src/angular-shiro-custom.js' ],
 		dest : '<%= dist %>/<%= pkg.name %>.js',
 	    },
 	    banner : {
@@ -123,7 +123,7 @@ module.exports = function(grunt) {
 		    expand : true,
 		    cwd : '<%= dist %>',
 		    src : [ '<%= pkg.name %>.js', '<%= pkg.name %>.min.js' ],
-		    dest : 'demo/bower_components/angular-shiro/dist'
+		    dest : 'demo/bower_components/angular-shiro-custom/dist'
 		} ]
 	    }
 	},
