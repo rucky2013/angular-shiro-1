@@ -12,13 +12,14 @@
     "permission",
     "session"
   ],
-  "homepage": "https://github.com/gnavarro77/angular-shiro",
+  "homepage": "https://github.com/koneru9999/angular-shiro",
   "author": {
-    "name": "Gilles Navarro"
+    "name": "Venkaiah Chowdary Koneru",
+    "email": "koneru.chowdary@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gnavarro77/angular-shiro.git"
+    "url": "https://github.com/koneru9999/angular-shiro.git"
   },
   "licenses": [
     {
