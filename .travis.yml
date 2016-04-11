@@ -6,3 +6,7 @@ before_script:
   - "npm install -g grunt-cli"
 script: 
   - "grunt build"
+deploy:
+api_key:
+email: koneru.chowdary@gmail.com
+provider: npm
