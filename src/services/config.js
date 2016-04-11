@@ -27,7 +27,8 @@ function AngularShiroConfigProvider() {
 	    api : '/api/logout',
 	    path : '/'
 	},
-	authenticationResponseParser : null
+	authenticationResponseParser : null,
+	authenticatorProvider: null
     };
 
     /**
