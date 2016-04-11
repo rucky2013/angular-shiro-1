@@ -1,7 +1,9 @@
-angular-shiro
-=============
+angular-shiro-custom
+====================
 
 `angular-shiro` is an attempt to bring [Apache Shiro](http://shiro.apache.org/) to the [AngularJS](https://angularjs.org/) world.
+
+Build : (https://travis-ci.org/koneru9999/angular-shiro.svg?branch=master)
 
 ## What is it all about?
 
