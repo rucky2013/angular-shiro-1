@@ -1,8 +1,8 @@
 /**
  * angular-shiro-custom
  * @version v0.1.3 - 2016-04-11
- * @link https://github.com/gnavarro77/angular-shiro
- * @author Gilles Navarro ()
+ * @link https://github.com/koneru9999/angular-shiro
+ * @author Venkaiah Chowdary Koneru (koneru.chowdary@gmail.com)
  * @license MIT License, http://www.opensource.org/licenses/MIT
  */
 (function (window, document, undefined) {
@@ -25,7 +25,8 @@
           api: '/api/logout',
           path: '/'
         },
-        authenticationResponseParser: null
+        authenticationResponseParser: null,
+        authenticatorProvider: null
       };
     /**
      * 
@@ -2822,8 +2823,14 @@
       }
     ];
   var angularShiroServicesModule = angular.module('angularShiro.services', []);
-  angularShiroServicesModule.provider('authenticator', AuthenticatorProvider);
   angularShiroServicesModule.provider('angularShiroConfig', AngularShiroConfigProvider);
+  angularShiroServicesModule.provider('authenticator', ['angularShiroConfig'], function (angularShiroConfig) {
+    if (angularShiroConfig.authenticatorProvider) {
+      return angularShiroConfig.authenticatorProvider;
+    } else {
+      return AuthenticatorProvider;
+    }
+  });
   angularShiroServicesModule.factory('subject', [
     'authenticator',
     'authorizer',
