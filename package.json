@@ -1,7 +1,7 @@
 {
   "name": "angular-shiro-custom",
   "description": "AngularShiro - AngularJS authentication and authorization support",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "keywords": [
     "angular",
     "shiro",
