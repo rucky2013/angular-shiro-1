@@ -56,6 +56,7 @@
     "node": ">= 0.10.0"
   },
   "scripts": {
-    "test": "grunt karma:travis"
+    "test": "grunt karma:travis",
+	"ci-publish": "ci-publish"
   }
 }
