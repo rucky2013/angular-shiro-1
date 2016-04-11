@@ -25,7 +25,11 @@ angularShiroServicesModule.factory('authorizer', function() {
     return new Authorizer();
 });
 angularShiroServicesModule.factory('authenticationResponseParser', ['angularShiroConfig'],  function(angularShiroConfig) {
-	return angularShiroConfig.authenticationResponseParser;
+	if(angularShiroConfig.authenticationResponseParser) {
+		return angularShiroConfig.authenticationResponseParser;
+	} else {
+		return new AuthenticationResponseParser();
+	}
 });
 
 var filters = {
