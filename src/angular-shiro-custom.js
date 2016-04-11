@@ -11,8 +11,15 @@
  */
 
 var angularShiroServicesModule = angular.module('angularShiro.services', []);
-angularShiroServicesModule.provider('authenticator', AuthenticatorProvider);
 angularShiroServicesModule.provider('angularShiroConfig', AngularShiroConfigProvider);
+
+angularShiroServicesModule.provider('authenticator', ['angularShiroConfig'], function(angularShiroConfig) {
+	if(angularShiroConfig.authenticatorProvider) {
+		return angularShiroConfig.authenticatorProvider;
+	} else {
+		return AuthenticatorProvider;
+	}
+});
 
 angularShiroServicesModule.factory('subject', [ 'authenticator', 'authorizer', 'authenticationResponseParser',
 	function(authenticator, authorizer, authenticationResponseParser) {
