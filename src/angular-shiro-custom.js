@@ -24,8 +24,8 @@ angularShiroServicesModule.factory('usernamePasswordToken', function() {
 angularShiroServicesModule.factory('authorizer', function() {
     return new Authorizer();
 });
-angularShiroServicesModule.factory('authenticationResponseParser', function() {
-    return new AuthenticationResponseParser();
+angularShiroServicesModule.factory('authenticationResponseParser', ['angularShiroConfig'],  function(angularShiroConfig) {
+	return angularShiroConfig.authenticationResponseParser;
 });
 
 var filters = {
