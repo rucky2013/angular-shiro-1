@@ -1,5 +1,5 @@
 {
-  "name": "angular-shiro",
+  "name": "angular-shiro-custom",
   "description": "AngularShiro - AngularJS authentication and authorization support",
   "version": "0.1.3",
   "keywords": [
@@ -26,8 +26,8 @@
     }
   ],
   "main": [
-    "./dist/angular-shiro.js",
-    "./dist/angular-shiro.min.js"
+    "./dist/angular-shiro-custom.js",
+    "./dist/angular-shiro-custom.min.js"
   ],
   "ignore": [
     "test",
