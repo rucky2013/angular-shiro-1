@@ -1,12 +1,15 @@
 language: node_js
 node_js:
-  - "0.11"
-  - "0.10"
+- '0.11'
+- '0.10'
 before_script:
-  - "npm install -g grunt-cli"
-script: 
-  - "grunt build"
-deploy:
-api_key:
+- npm install -g grunt-cli
+script:
+- grunt build
+deploy: 
+api_key: 
 email: koneru.chowdary@gmail.com
 provider: npm
+env:
+  global:
+    secure: VqSbyes+ablqEnBLJL0Y7lgYEc9V/QwhpR4N8FCriQ7rOGkRgO2gnc/zb4Q6wytKBNGvWlMjazvZAQ0OCE+zDy0g4irapjLF6ls7wted/iD33XeurgFJGlFy9ODPgkRmkvbjnHvec8T7bTIfwbFoFIHI6xTNQ6Ss6GCoolZnSdrNQQBNVy97c81r8LiXCyYl5YqMhK7mmrRGdt1aUda7QeW/6nQBhuLOGHbtZC1ch58lsn2QDN7BOZL9y592YjYbE8E9qtzr+MZNyLO2cTdjNtQuBzrZUka/GWY8ykJiV3Z6zfjbupA5nYZO9kxt7o8MJQoxF2sDVQele4hU3M40xyufRVYboXskWjDy7wT0rdE5687zfBycaadcP3wgMro9qS2WXNx0C4I9ZXeGO24HVVuaFmsyibXmIfc5fM3ZRd9ZedmzeDgY0JwirSGB744QY3bj5yo/yiiKmmkP+RrELuolPbil4P9u259r1XAFcZ03q9B2jZhrsPBE60rnQ/A2k97HD1TBYgP4Kk8SQP4B4FrH0BzT/P938fnWVWBCEtxltoaqMAK+ss41lHtLoEwPvt+N7Cybqjj5lwrZOvVoXSB/SfZDuHQ07S+0hI7P7t4O/HHNX9hFLGAzuK98CR4uUpfeqB+HJSv4LeeXjmDiazjspTF5ofjY6wE0DtaeaTk=
