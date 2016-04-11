@@ -1,16 +1,19 @@
 angular-shiro-custom ![Build Status](https://travis-ci.org/koneru9999/angular-shiro.svg?branch=master)
 ====================
 
+This is customized version of `angular-shiro` package from (https://github.com/gnavarro77/angular-shiro)
+
+
 `angular-shiro` is an attempt to bring [Apache Shiro](http://shiro.apache.org/) to the [AngularJS](https://angularjs.org/) world.
 
 ## What is it all about?
 
-`angular-shiro` is born out of the such simple needs as
+`angular-shiro-custom` is born out of the such simple needs as
 
 * if the user is not an *admin* then this button must not be *available*
 * if the user does not have *that* permission then he should not be able to do or access that *action* or *resource*
 
-As [Apache Shiro](http://shiro.apache.org/) is all about those issues (and more), instead of reinventing the wheel, `angular-shiro` is strongly inspired, if not more, from its JAVA mentor.
+As [Apache Shiro](http://shiro.apache.org/) is all about those issues (and more), instead of reinventing the wheel, `angular-shiro-custom` is strongly inspired, if not more, from its JAVA mentor.
 
 
 ## Getting started
@@ -19,20 +22,20 @@ As [Apache Shiro](http://shiro.apache.org/) is all about those issues (and more)
 
 Using `bower`
 
-`bower install angular-shiro` --save
+`bower install angular-shiro-custom` --save
 
 or by downloading project as zip
 
-[angular-shiro](https://github.com/gnavarro77/angular-shiro/archive/master.zip)
+[angular-shiro-custom](https://github.com/koneru9999/angular-shiro/archive/master.zip)
 
 ### Usage
 
-   - Load `angular-shiro` script
+   - Load `angular-shiro-custom` script
 
 ```javascript
-<script type="text/javascript" src="path_to_angular_shiro/angular-shiro.min.js"></script>
+<script type="text/javascript" src="path_to_angular_shiro/angular-shiro-custom.js"></script>
 ```
-   - Add `angular-shiro` module to your application module dependencies
+   - Add `angular-shiro-custom` module to your application module dependencies
 
 ```javascript
 angular.module('myApp', ['angularShiro', ...])
@@ -57,9 +60,6 @@ subject.login(new UsernamePasswordToken('myLogin','myPassword')
     ng-click="edit()"
     has-role="'ADMIN'">Edit</button>
 ```
-## Demo
-
-As a demo is worth a thousand words, check out [**angular-shiro address book demo application**](http://gnavarro77.github.io/angular-shiro)
 
 ## Authentication
 
